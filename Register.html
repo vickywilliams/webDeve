@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <font style="font-style: italic; background-color: bisque;">
+    <title>Register Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+
+            background-color: #ffffff;
+            color: #000000;
+
+            display: grid;
+            place-content: center;
+        }
+
+        form {
+            width: 40rem;
+        }
+
+        form div {
+            margin-bottom: 1rem;
+        }
+
+        form .btn {
+            background-color: #28b37d;
+            color: white;
+
+            width: 100%;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+
+            display: inline-block;
+        }
+
+        form label {
+            display: block;
+
+            font-weight: 500;
+        }
+
+        form input {
+            background-color: #f1f1f1;
+
+            width: 100%;
+            padding: 1rem 3rem;
+            border: 0;
+            margin: 0.3rem 0.2rem;
+            outline: none;
+        }
+
+        p.footer-text {
+            background-color: #f1f1f1;
+            padding: 1rem 3rem;
+            border-radius: 0.5rem;
+
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Register</h1>
+    <p>please fill in this form to create an account</p>
+
+    <hr>
+
+    <form action="" method="post"> <!--get-->
+        <div>
+            <label for="login-email">Email address</label>
+            <input type="email" name="login-email" id="login-email" placeholder="enter email" autofocus>
+        </div>
+        <div>
+            <label for="login-password">Password</label>
+            <input type="password" name="login-password" id="login-password" placeholder="enter password">
+        </div>
+        <div>
+            <label for="login-password2">Repeat Password</label>
+            <input type="password" name="login-password2" id="login-password2" placeholder="repeat password">
+        </div>
+
+        <hr>
+
+        <p>by creating an account, you agree to our <a href="#">Terms & Policy</a></p>
+
+        <a href="" class="btn">Register</a>
+
+        <p class="footer-text">Already have an account? <a href="#">Sign in</a></p>
+             
+    </form>
+</font>
+
+</body>
+</html>
