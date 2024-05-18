@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoto mack a website </title>
+    <link rel="stylesheet" href="./bikeshop.css">
+</head> 
+<body>
+    <div class="container" id="bike" >
+        <nav>
+            <img src="./Jawa-logo.png" class="logo">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h2>THE JAWA</h2>
+            <h1>JAWA 42.2.1</h1>
+            <p>Other key specifications of the 42 2.1 include a top speed of 140 kmph, a fuel tank capacity of 14 Litres, seat height of 765 mm and ground clearance of 165 mm. The JAWA 42 2.1 also features a Disc front brake and Disc rear brake, weighs 172 kg and comes with a reported mileage of 32.5 kmpl.</p>
+            <h3>Choose your color</h3>
+            <div class="colour-select">
+                <div id="red"></div>
+                <div id="white"></div>
+                <div id="black"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let redBtn = document.getElementById("red");
+        let whiteBtn = document.getElementById("white");
+        let blackBtn = document.getElementById("black");
+        let bike = document.getElementById("bike")
+        redBtn.onclick = function(){
+            bike.style.backgroundImage = "url(./jawa1.png)";
+        }
+        whiteBtn.onclick = function(){
+            bike.style.backgroundImage = "url(./jawa2.png)";
+        }
+        blackBtn.onclick = function(){
+            bike.style.backgroundImage = "url(./jawafd.png)";
+        }
+    </script>
+</body>
+</html>

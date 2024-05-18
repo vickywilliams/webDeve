@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form in modal</title>
+
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+
+    <h2>Modal Signup From</h2>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Sign Up</button>
+    
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close modal">&times;</span>
+        <form action="Success.html" class="modal-content">
+            <div class="container">
+                <h1>sign up form</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente error blanditiis maiores voluptates eveniet libero.</p>
+                <hr>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="enter your name">
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="enter password" name="psw" required>
+                    <label for="psw-repeat">Repeat password</label>
+                    <input type="password" placeholder="repeat password" name="psw-repeat" required>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px;"> Remember me
+                    </label>
+                    <p>
+                        By creating an account, you agree to our <a href="#" style="color: blueviolet;">Terms and policy</a>
+                    </p>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
